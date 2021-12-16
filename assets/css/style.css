@@ -1,0 +1,36 @@
+
+.main-container{
+    display:flex;    
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;    
+    
+}
+
+.internal-div{
+    height: 30px;
+    flex-grow:1;
+    background-color:yellow;    
+    box-sizing: border-box;
+    border: solid black 1px;
+}
+
+.div1{
+    background-color: grey;
+    flex-grow:3;
+    color:khaki;    
+}
+
+
+
+.div1 p{
+    display: inline-block;
+    width: fit-content;
+
+}
+
+.div1:hover{
+    font-size: 1.5em;    
+}
