@@ -1,32 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body{
-    background-color:chocolate;
+    background-color:#ffe3dc;
 }
 nav{
     width: 100%;
-    background-color:grey;    
-    height: 30px;
+    height: 45px;
 }
 
 ul{
     display:flex;
     height: 100%;
     font-weight: bold;
+    background-color:#d30c7b;    
+
     
 }
 
 
 li{
     display:inline-block;
-    border:solid black 1px;
-    font-size: 18px;
-    line-height:18px;
-    padding:6px 0 6px 5px;
+    width: 100%;
+    height: 45px;    
+    font-size: 30px;
+    background-color:#d30c7b;    
+
+    
+
+    
     
 }
 
 li a{
     text-decoration: none;
     color: black;
+    height: 100%;
 
 }
 
@@ -36,17 +44,44 @@ li a:visited{
 
 
 #menu-principal{
-    flex-grow:4;
+    font-family: 'Pacifico', cursive;
+    flex-grow:6;
+    padding-left: 15px;
+   
+}
+
+#menu-principal:hover{
+    font-size:34px;
+
 }
 
 .menu-sec{
-    flex-grow:1;
+    flex-grow: 0.5;
+}
+
+.menu-sec-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+
+}
+
+.menu-sec-link:hover{
+    background-color:rgba(211,211,211,0.8);
+
+
+}
+
+.fas{
+    margin-left: 10px;
 }
 
 
 .main-container{
     display:flex;    
-    padding: 10% 0;
+    padding: 5% 0;
     justify-content: space-around;
     flex-wrap:wrap;
     
@@ -56,18 +91,26 @@ li a:visited{
 
 .card{
     /*border: solid black 2px;*/
-    width: 15%;
-    
-    margin: 20px 5%; 
-    
-      
+    width: 20%;
+    height: 350px;    
+    margin: 15px 10px 100px;
+    text-align: center;
+         
 }
+
+.card p{
+    text-align: center;
+    margin:15px 0 15px;
+    font-weight: bold;
+}
+
 
 img{
     display:block;
     width: 100%;
-    height: 90%;
+    height: 300px;
     border-radius:5%;
+    box-shadow: 2px 4px 5px black;
 
 }
 
@@ -76,10 +119,33 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color:#e09524;
+    background-color:#d30c7b;
     height: 40px;
     text-align:center;
     line-height: 40px;
+
+}
+
+@media screen and (max-width:480px){
+    
+    .card{
+        width: 50%;
+        height:120px;
+        margin: 15px 10px 300px;
+    }
+
+    ul{
+        flex-direction: column;
+    }
+
+   header{
+       margin-bottom: 20px;
+   }
+
+   .main-container{
+       margin-top:100px;
+   }
+
 
 }
 
